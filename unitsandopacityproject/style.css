@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main{
+    
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px dotted black;
+    border-right: 2px dotted black;
+    height: 350px;
+    width: 270px;
+    margin:0 auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    padding: 2px;
+    background-color: aqua;
+    opacity: 0.9;
+    
+}
+#name{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+#name:hover{
+    text-decoration: underline;
+}
+#imp:hover{
+    background-color: lightskyblue;
+}
+#tagline{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#box{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px dotted black;
+    border-right: 2px dotted black;
+    margin:25px 10px;
+    height: 25%;
+}
+#box:hover{
+    background-color: rgba(102, 102, 218, 0.5);
+}
+#about::first-letter{
+    font-size: 20px;
+
+}
+#theory::before{
+ content: '>';
+}
+#about:hover{
+    color: brown;
+}
+#about{
+    margin: 5px 5px;
+    font-size: 1em;
+}
+#theory{
+     margin: 5px 5px;
+     font-size: 1rem;
+    
+}
+li{
+    display: inline-block;
+     margin: 5px 5px;
+}
+li:hover{
+    color: blue;
+}
+li::before{
+    content:  "#" ;
+}
+#skills{
+    margin: 30px 5px 10px;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+#anchor{
+    border: 2px double black;
+    text-decoration: none;
+    padding: 2px;
+    background-color: rgba(244, 125, 125, 0.8);
+    
+}
+#anchor:hover{
+    color: black;
+}
+#last{
+     margin:10px 10px;
+}
+
