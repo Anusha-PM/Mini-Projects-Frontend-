@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: aqua;
+    width: 100%;
+    padding:10px;
+}
+ul{
+    display:flex;
+    gap: 20px;
+    list-style: none;
+    flex-grow: 1;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: brown;
+}
+a:hover{
+    color:black;
+    font-weight: 700;
+}
+button{
+    padding: 5px 10px;
+    border:none;
+    background-color: brown;
+    color: aliceblue;
+    border-radius: 10px;
+     transition: background-color 0.3s ease-in;
+}
+button:hover{
+    background-color: chocolate;
+    
+}
