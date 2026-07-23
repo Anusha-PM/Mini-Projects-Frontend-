@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#top {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+
+#header{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+}
+#hitems{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    flex-grow: 1;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    
+}
+#hitems a{
+    text-decoration: none;
+    
+}
+#main-area{
+    display: flex;
+}
+#card-container{
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    
+    flex-grow: 1;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+   
+}
+.card{
+    border: 2px solid black;
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    min-width: 200px;
+    flex-grow: 1;
+    align-items: center;
+
+    
+
+   
+}
+#side {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    list-style: none;
+    min-width: 200px;
+    
+}
+#side li a{
+    text-decoration: none;
+}
+
+footer div p{
+    text-align: center;
+    padding: 20px;
+}
+button{
+    border: none;
+    background-color: rgb(216, 104, 24);
+    color: black;
+    padding: 5px 10px;
+    border-radius: 7px;
+   
+}
