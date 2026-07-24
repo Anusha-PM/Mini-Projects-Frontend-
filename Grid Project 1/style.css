@@ -1,0 +1,217 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+#container {
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 200px 1fr;
+
+    grid-template-rows: 80px 1fr 100px;
+
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+}
+
+
+
+
+header {
+    grid-area: header;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    padding: 0 25px;
+
+    background-color: #1e293b;
+
+    color: white;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+
+
+
+#hnav {
+    display: grid;
+
+    grid-template-columns: repeat(3, auto);
+
+    justify-content: end;
+
+    gap: 25px;
+
+    list-style: none;
+}
+
+#hnav a {
+    color: white;
+
+    transition: color 0.3s;
+}
+
+#hnav a:hover {
+    color: #38bdf8;
+}
+
+
+
+aside {
+    grid-area: sidebar;
+
+    background-color: #334155;
+
+    padding: 15px;
+}
+
+aside ul {
+    display: grid;
+
+    gap: 10px;
+
+    list-style: none;
+
+    height: 100%;
+
+    align-content: space-evenly;
+}
+
+aside a {
+    display: block;
+
+    padding: 10px 10px 10px 20px;
+
+    color: white;
+
+    border-radius: 10px;
+
+    transition: background-color 0.3s;
+}
+
+aside a:hover {
+    background-color: #475569;
+}
+
+aside a.active {
+    background-color: #2563eb;
+
+    border: 2px solid white;
+}
+
+
+
+
+main {
+    grid-area: main;
+
+    display: grid;
+
+    grid-template-rows: 50px 1fr;
+
+    gap: 20px;
+
+    padding: 25px;
+}
+
+main h2 {
+    display: grid;
+
+    place-items: center;
+}
+
+
+
+
+#card-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 20px;
+
+    justify-content: center;
+}
+
+
+
+.card {
+    display: grid;
+
+    place-items: center;
+
+    gap: 10px;
+
+    padding: 20px;
+
+    border: 2px solid #cbd5e1;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+.card:first-child {
+    grid-column: 1 / span 2;
+
+    grid-row: 1 / span 2;
+}
+
+
+.card h3 {
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 28px;
+
+    font-weight: bold;
+}
+
+.card button {
+    padding: 8px 15px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+
+
+footer {
+    grid-area: footer;
+
+    display: grid;
+
+    place-items: center;
+
+    background-color: #1e293b;
+
+    color: white;
+}
