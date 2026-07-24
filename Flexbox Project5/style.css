@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#main{
+    background-color: aqua;
+    text-align: center;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.card{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 200px;
+    align-items: center;
+    background-color: rgb(243, 150, 164);
+    transition: box-shadow 0.5s ease-in ;
+    
+}
+#card:hover{
+     box-shadow: 5px 5px 10px black;
+}
+button{
+    border:none;
+    border-radius: 10px;
+    padding: 5px 5px;
+    margin-top: 15px;
+    background-color: rgb(206, 41, 41);
+    transition: box-shadow 0.5s ease-in ;
+}
+
+button:hover{
+    box-shadow: 5px 5px 10px black;
+    border: 2px solid transparent;
+}
